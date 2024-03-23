@@ -1,14 +1,131 @@
-body, html{
-    background-color: white;
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: baseline;
+    padding: 5rem;
+    gap: 1rem;
+    display: flex; /* Sætter flex display på parent container */
+    align-items: center; /* Centrerer elementer vertikalt */
+}
+.header {
+    background-color: #f3f3f3; /* Baggrundsfarve */
+    padding: 1rem; /* Indvendig afstand */
+    display: flex; /* Sætter flex display på parent container */
+    justify-content: space-between; /* Centrerer elementer horisontalt og giver dem lige plads mellem hinanden */
+    align-items: center; /* Centrerer elementer vertikalt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Skyggeeffekt for en mere fremtrædende udseende */
+}
+
+.link {
+    text-decoration: none; /* Fjerner understregning fra links */
+    color: #777; /* Standardfarve for tekst */
+    font-family: Arial, sans-serif; /* Vælg en passende skrifttype */
+    font-size: 16px; /* Juster størrelsen af teksten efter behov */
+    margin-right: 10px; /* Tilføj luft til højre for hvert link */
+    transition: color 0.3s ease; /* Glat farveovergang ved hover */
+}
+
+.link:hover {
+    color: #000; /* Ændrer farven til sort, når musemarkøren er over linket */
+}
+
+.footer-icon img {
+    width: 25px; /* Tilpas bredden på SoMe-ikonerne */
+    height: auto; /* Gør højden justerbar for at bevare billedets proportioner */
+    margin-left: 5px; /* Tilføj lidt luft til venstre for hvert ikon */
+}
+
+.footer-icon img:hover {
+    transform: scale(1.1); /* Forstør ikonen lidt ved hover */
+}
+a{
+    text-decoration: none;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px; /* Tilføj luft til højre for hvert link */
+}
+
+.dropdown.active > .link,
+.dropdown.active > .link:hover {
     color: black;
 }
-a,ul{
-    text-decoration: none;
-    list-style: none;
-}
-.dropdown1:hover{
-    display: none;
-background-color: #415242;
-position: absolute;
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 10%);
+    opacity: 0;
+    gap: 10px;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    width: 100px; /* Angiv ønsket bredde */
+    display: flex;
+    flex-direction: column; /* Sætter layoutet til kolonne */
+}
+
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+/*Footer*/
+footer {
+    background-color: #333; /* Baggrundsfarve */
+    padding: 20px; /* Indvendig afstand */
+    text-align: center; /* Centreret indhold */
+}
+
+footer a {
+    margin: 0 10px; /* Afstand mellem linkene */
+}
+
+footer img {
+    width: 40px; /* Bredde på ikoner */
+    height: 40px; /* Højde på ikoner */
+    border-radius: 50%; /* Runde hjørner for ikoner */
+    transition: transform 0.3s ease-in-out; /* Glidende overgang ved hover */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Forstør ikonen lidt ved hover */
+}
+
+.instagram {
+    background-color: #8a3ab9; /* Baggrundsfarve til Instagram */
+}
+
+.facebook {
+    background-color: #3b5998; /* Baggrundsfarve til Facebook */
+}
+
+.linkin {
+    background-color: #0077b5; /* Baggrundsfarve til LinkedIn */
 }

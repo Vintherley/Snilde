@@ -2,3 +2,13 @@ body, html{
     background-color: white;
     color: black;
 }
+a,ul{
+    text-decoration: none;
+    list-style: none;
+}
+.dropdown1:hover{
+    display: none;
+background-color: #415242;
+position: absolute;
+
+}

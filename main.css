@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: #415242;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header a {
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .dropdown {
@@ -20,13 +20,18 @@
     position: absolute;
     left: 0;
     top: calc(100% + .25rem);
-    background-color: white;
-    padding: .75rem;
+    background-color: #415242;
+    padding: 5px;
     border-radius: .25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+button{
+    background-color: #415242;
+    color:white;
+    border: none;
 }
 
 .dropdown.active > .dropdown-menu {
@@ -34,19 +39,18 @@
     transform: translateY(0);
     pointer-events: auto;
 }
-
 .links {
     display: flex;
 }
 
 .link {
-    margin-right: 10px;
+    margin-right: 20px;
     text-decoration: none;
-    color: #777;
+    color: white;
 }
 
 .link:hover {
-    color: black;
+    background-color: #344235;
 }
 
 .social-icons {
@@ -76,7 +80,7 @@
 }
 /*Footer*/
 footer {
-    background-color: white; /* Baggrundsfarve */
+    background-color: #415242; /* Baggrundsfarve */
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 10%);
     padding: 20px; /* Indvendig afstand */
     text-align: center; /* Centreret indhold */
@@ -85,6 +89,7 @@ footer {
 footer p {
     margin: 0; /* Fjern margen omkring teksten */
     text-align: left; /* Venstrejustér teksten */
+    color: white;
 }
 
 .social-icons {

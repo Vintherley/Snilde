@@ -1,6 +1,6 @@
-/*Index side*/
+
 .banner{
-    width: 1520px;
+    width: 1500px;
     height: auto;
     float: center;
 }
@@ -39,8 +39,41 @@ h1{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 99%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    padding: 4px;
+}
+.opskrifter {
+    background-color: beige;
+    display: flex;
+    justify-content: space-between; /* Placerer elementerne jævnt mellem containerens kanter */
+    align-items: center; /* Centrerer elementerne vertikalt */
+    padding: 20px; /* Tilføj lidt padding for at give plads til indhold */
+}
+
+.madbillede {
+    width: 25%; /* Juster størrelsen efter behov */
+    margin-left: auto; /* Placer billedet til højre ved at udfylde resterende plads */
+}
+
+.opskrifter h2 {
+    margin-bottom: 10px; /* Tilføj lidt luft under overskriften */
+}
+
+.opskrifter p {
+    width: 50%; /* Juster bredden efter behov */
+}
+
+.opskrifterknap,
+.køb-knap {
+    background-color: #344235;
     padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px; /* Tilføj lidt luft øverst på knapperne */
+}
+
+.køb-knap {
+    margin-left: auto; /* Placer knappen helt til højre */
 }

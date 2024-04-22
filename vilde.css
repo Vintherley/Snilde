@@ -11,10 +11,10 @@
 .box h2 {
     margin-top: 0;
 }
-.box p, ul, li {
+.box p {
     display: none;
 }
-.box.active p, ul, li {
+.box.active p {
     display: block;
 }
 .box a {

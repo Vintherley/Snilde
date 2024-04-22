@@ -1,0 +1,164 @@
+/*body{
+    margin: 0;
+}
+/*header *
+.header{
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: baseline;
+    padding: 5rem;
+    gap: 1rem;
+}
+.link{
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+.dropdown.active > .link
+.link:hover{
+    color: black;
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position:absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 10%);
+    opacity: 0;
+    pointer-events: none;/*gør at den ikke tillader  nogen form for interagtion med musen
+    transform: translateY(-10px);
+    transition:opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown.active > .link + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;/*når den er aktiveret, interegeren den når normalt med musen
+}
+
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.login-form > input{
+    margin-bottom: .5rem;
+}
+/*CSS Grid
+.grid-Contatiner{
+    background-color: #777;
+    display: grid;
+    grid-template-columns: 200px 100px; /*her kan du bestemme hvor mange colums der skal være, der kan bruges % px fr osv
+    grid-template-rows: 100px;
+
+}
+/*see more/readmore/readeless*
+.container-box{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+.box{
+    width: 500px;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.description_box{
+    height: 150px;
+    overflow: hidden;
+    line-height: 1.5;
+    padding: 20px 0;
+    position: relative;
+}
+.active{
+    height: auto;
+}
+.button{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    background-color: transparent;
+    padding: 20px 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.button:after{
+    position: absolute;
+    content: "";
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 88px;
+    background: linear-gradient(180deg , #ffffffa1 , #fff , #fff);
+    z-index: -1;
+}
+.active_buttom{
+    position: unset;
+    width: 100%;
+}
+.active_buttom:after{
+    background: transparent;
+}
+
+/*sorter via filter*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    float: left;
+    background-color: grey;
+    color: black;
+    width: 125px;
+    line-height: 125px;
+    text-align: center;
+    margin: 10px;
+    display: none;
+    }
+    .show{
+        display: block;
+    }
+    .btn{
+        border: none;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 12px 16px;
+        background-color: blanchedalmond;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: aquamarine;
+    }

@@ -1,15 +1,24 @@
+:root{
+    --background-color-main:#415242;
+    --background-color-2: ;
+    --txt-color:#ffffff;
+    --txt-color-2:#000000;
+    --hover:#344235;
+}
+/*mobile*/
+@media (max-width: 699px){
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #415242;
+    background-color:var(--background-color-main);
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header a {
     text-decoration: none;
-    color: white;
+    color: var(--txt-color);
 }
 
 .dropdown {
@@ -29,8 +38,8 @@
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 button{
-    background-color: #415242;
-    color:white;
+    background-color: var(--background-color-main);
+    color:var(--txt-color);
     border: none;
 }
 
@@ -46,16 +55,17 @@ button{
 .link {
     margin-right: 20px;
     text-decoration: none;
-    color: white;
+    color:var(--txt-color);
 }
 
 .link:hover {
-    background-color: #344235;
+    background-color: var(#344235);
 }
 
 .social-icons {
     display: flex;
 }
+/*Footer*/
 
 .footer-icon {
     margin-left: 10px;
@@ -78,9 +88,9 @@ button{
     height: 10px;
     margin-left: 5px;
 }
-/*Footer*/
+
 footer {
-    background-color: #415242; /* Baggrundsfarve */
+    background-color: var(--background-color-main); /* Baggrundsfarve */
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 10%);
     padding: 20px; /* Indvendig afstand */
     text-align: center; /* Centreret indhold */
@@ -89,7 +99,7 @@ footer {
 footer p {
     margin: 0; /* Fjern margen omkring teksten */
     text-align: left; /* Venstrejustér teksten */
-    color: white;
+    color: var(--txt-color);
 }
 
 .social-icons {
@@ -111,7 +121,54 @@ footer img {
 footer img:hover {
     transform: scale(1.1); /* Forstør ikonen lidt ved hover */
 }
+/*om Mig side*/
+.stephanie{
+    width: 30%;
+    height: 100vh;
+    float: inline-end;
+}
+.om-mig{
+    font-size: medium;
+    color: var(--txt-color-2);
+}
+.hrj{
+    color: var(--background-color-main);
+    font-family: cursive;
+}
+/*Vilderaavare*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.box {
+    background-color: #f9ffeb;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.box h2 {
+    margin-top: 0;
+}
+.box p {
+    display: none;
+}
+.box.active p {
+    display: block;
+}
+.box a {
+    display: block;
+    margin-top: 10px;
+}
 
+.img {
+    width: 25%;
+    height: auto
+}
+li{
+    list-style: circle;
+
+}
+}
 
 
 
